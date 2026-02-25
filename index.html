@@ -10,27 +10,17 @@
   <body>
     <div class="ui">
       <h1>Earth</h1>
-      <p>Distance from Sun: <span>149.6M km</span></p>
-      <p>Radius: <span>6,371 km</span></p>
-      <p>Day length: <span>24 hours</span></p>
-      <p>Orbital speed: <span>29.8 km/s</span></p>
-      <p>Axial tilt: <span>23.4°</span></p>
-      <p>Surface gravity: <span>9.8 m/s²</span></p>
-      <p>Moons: <span>1</span></p>
-      <p>Atmosphere: <span>78% N₂, 21% O₂</span></p>
-      <p>Temperature: <span>−88°C to +58°C</span></p>
-      <p>Age: <span>4.5 billion years</span></p>
     </div>
 
     <nav class="planets">
-      <button class="planet-btn soon" disabled>Mercury <span class="soon-label">soon</span></button>
-      <button class="planet-btn soon" disabled>Venus <span class="soon-label">soon</span></button>
-      <button class="planet-btn active">Earth</button>
-      <button class="planet-btn soon" disabled>Mars <span class="soon-label">soon</span></button>
-      <button class="planet-btn soon" disabled>Jupiter <span class="soon-label">soon</span></button>
-      <button class="planet-btn soon" disabled>Saturn <span class="soon-label">soon</span></button>
-      <button class="planet-btn soon" disabled>Uranus <span class="soon-label">soon</span></button>
-      <button class="planet-btn soon" disabled>Neptune <span class="soon-label">soon</span></button>
+      <button class="planet-btn" data-planet="mercury">Mercury</button>
+      <button class="planet-btn" data-planet="venus">Venus</button>
+      <button class="planet-btn active" data-planet="earth">Earth</button>
+      <button class="planet-btn" data-planet="mars">Mars</button>
+      <button class="planet-btn" data-planet="jupiter">Jupiter</button>
+      <button class="planet-btn" data-planet="saturn">Saturn</button>
+      <button class="planet-btn" data-planet="uranus">Uranus</button>
+      <button class="planet-btn" data-planet="neptune">Neptune</button>
     </nav>
 
     <script type="module" src="/src/main.js"></script>
