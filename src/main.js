@@ -1,6 +1,7 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import getStarfield from "./getStarfield.js";
+import { PLANETS } from "./planets.js";
 
 //renderer
 const w = window.innerWidth;
@@ -8,7 +9,6 @@ const h = window.innerHeight;
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(w, h);
 document.body.appendChild(renderer.domElement);
-
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
 renderer.toneMappingExposure = 0.6;
 // renderer.outputColorSpace = THREE.LinearSRGBColorSpace;
@@ -64,7 +64,6 @@ const cloudsMaterial = new THREE.MeshStandardMaterial({
   blending: THREE.AdditiveBlending,
   transparent: true,
   opacity: 1.0,
-  // alphaMap: loader.load("/earthcloudmaptrans.jpg"),
 });
 const cloudsMesh = new THREE.Mesh(geometry, cloudsMaterial);
 cloudsMesh.scale.setScalar(1.005);
